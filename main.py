@@ -58,7 +58,7 @@ print(docs)
 while select != ("p", "t"):
     select = input("Enter your required Client < P / T > : ").lower()
     if select == "t":
-        print("""\nTelethon selected!\nRunning script...""")
+        print("\nTelethon selected!\nRunning script...")
         sleep(1)
         with TelegramClient(StringSession(), api_id=API_ID, api_hash=API_HASH) as client:
             print("\nGenerating Telethon STRING_SESSION...")
@@ -70,7 +70,7 @@ while select != ("p", "t"):
             print(generated)
         break
     elif select == "p":
-        print("""\nPyrogram selected!\nRunning script...""")
+        print("\nPyrogram selected!\nRunning script...")
         sleep(1)
         with Client("UserBot", api_id=API_ID, api_hash=API_HASH) as client:
             print("\nGenerating Pyrogram STRING_SESSION...")
