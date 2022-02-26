@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "repl_python3_strgen"
+version = "0.1.0"
+description = "Pyrogram and Telethon STRING_SESSION generator."
+license = "MIT"
+authors = ["notudope <notudope@gmail.com>"]
+readme = "README.md"
+homepage = "https://github.com/notudope/strgen#readme"
+repository = "https://github.com/notudope/strgen"
+keywords = ["bot", "python", "telegram-bot", "pyrogram", "telethon", "userbot"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+Telethon = "^1.24.0"
+TgCrypto = "^1.2.3"
+Pyrogram = "^1.4.7"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
