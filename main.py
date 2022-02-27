@@ -1,6 +1,5 @@
 # Copyright (C) 2021-present notudope <https://github.com/notudope>
 
-from sys import exit
 from time import sleep
 from pyrogram import Client
 from telethon.sessions import StringSession
@@ -50,7 +49,7 @@ try:
     API_ID = int(input("Enter your API_ID here: "))
 except ValueError:
     print(">> API_ID must be an integer.\nQuitting...")
-    exit(0)
+    exit()
 API_HASH = input("Enter your API_HASH here: ")
 
 print(docs)
